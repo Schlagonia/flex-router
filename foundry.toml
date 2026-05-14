@@ -1,0 +1,19 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+solc = "0.8.23"
+ffi = true
+
+remappings = [
+    "@openzeppelin/=lib/openzeppelin-contracts/",
+    "forge-std/=lib/forge-std/src/",
+    "@tokenized-strategy/=lib/flex-contracts/lib/tokenized-strategy/src/",
+    "@periphery/=lib/flex-contracts/lib/tokenized-strategy-periphery/src/",
+    "@yearn-vaults/=lib/tokenized-strategy-periphery/lib/yearn-vaults-v3/contracts/",
+    "@flex/=lib/flex-contracts/src/",
+    "@flex-test/=lib/flex-contracts/test/",
+    "@flex-script/=lib/flex-contracts/script/",
+]
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
